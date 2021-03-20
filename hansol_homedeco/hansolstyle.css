@@ -1,0 +1,27 @@
+body { margin: 0; padding: 0; color: #000; letter-spacing: -1px; font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple SD Gothic Neo', sans-serif;}
+header { height: 80px; text-align: center; }
+header nav ul { margin: 0;}
+header h1 { position: absolute; top: 0; left: 50px; margin: 15px 0; width: 138px;}
+header h1 a { display: block; width: 112px; height: 50px; color: transparent; overflow: hidden;
+    background: url('./images/sp_com.png') no-repeat -300px 0px;}
+
+header .gnb li { display: inline-block; line-height: 80px; margin: 0 35px;}
+header .gnb a { position: relative; font-size: 18px;}
+header .gnb a:hover { color: #2D5B79; font-weight: bold; }
+header .gnb a:hover::after { content: ""; display: block; position: absolute; left: 0; bottom: -10px;
+    background: #2D5B79; width: 100%; height: 0.6px;}
+
+header .menu2 { position: absolute; top: 0; right: 50px;}
+header .menu2 li { position: relative; display: block; float: left;}
+header .menu2 li::after { content: ""; position: absolute; top: 50%; left: 0; width: 1px; height: 7px; background: #ccc; transform: translateY(-50%);}
+header .menu2 li:first-child::after { display: none;}
+header .menu2 a { display: block; height: 80px; line-height: 80px; font-size: 14px; padding: 0 10px;}
+header .menu2 li:last-child a { padding-right: 0;} /* 양쪽 여백 50px로 맞춤 */
+header .menu2 a:hover { text-decoration:underline;}
+
+a { text-decoration-line: none; color: #000;}
+li { list-style-type: none;}
+.skip { position: absolute; left: 0; top: -100px; width: 100%; height: 50px; line-height: 50px;
+background: #000; color: #fff; text-align: center;}
+.skip:focus { top: 0px; transition: 0.5s;}
+.hide { position: absolute; left: -5000px;} /* display:none을 하면 화면낭독기 센스리더가 읽지 못함 */
